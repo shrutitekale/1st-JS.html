@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            // swap two numbers without using a third variable.
+            let a=5,b=3;
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            console.log(a,b);
+
+            //check if a number is even or odd.
+            let num=7;
+            let isEven=num % 2 ===0;
+            console.log(isEven ? "Even":"Odd");
+
+            //find the maximum of three numbers.
+            let x=10,y=25,z=15;
+            let max =(x>y && x>z) ? x : (y>z ? y : z);
+            console.log("Max:",max);
+
+            //simple calculator function
+            function calculator(a,b,op){
+                return op=='+'?a+b:
+                op=='-'?a-b:
+                op=='*'?a*b:
+                op=='%'?a%b:
+            "Invalid operator";
+            }
+            console.log(calculator(10,5,'*'));
+
+            //check if character is vowel or consonant
+            let ch='e';
+            let isVowel=(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u');
+            console.log(isVowel?"Vowel":"Consonant");
+
+            // calculator square using=operator.
+            let Num=6;
+            Num*=Num;
+            console.log(Num);
+
+            //return true if both inputs are Non-Zero.
+            let c=5,d=2;
+            let result=a&&b;
+            console.log(!!result);
+
+            //check if a numbers lies between two numbers.
+            let N=15;
+            let Result=(Num>10)<20;
+            console.log(Result);
+
+            //postfix and prefix operators
+            let p=5;
+            let k=p++ + ++p;
+            console.log(p);
+            console.log(k);
+
+            //predict output using logical operators
+            let r=0;
+            let s=10;
+            let result1=r&&s;
+            let result2=r||s;
+            console.log(result1);
+            console.log(result2);
+
+        </script>
+    </body>
+</html>

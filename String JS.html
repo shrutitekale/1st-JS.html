@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        
+
+        <script>
+
+            // convert string to uppercase
+            let str1="shruti";
+            console.log("UpperCase:",str1.toUpperCase());
+
+            // Convert string to LowerCase
+            let str2="SHRUTI";
+            console.log("LowerCase:",str2.toLowerCase());
+
+            // print length og string
+            let str3=prompt("Enter a string to find length:");
+            console.log("Length of the string:",str3.length);
+
+            // check string ends with a particular word
+            let str4=" Hi,My Name is Shruti.";
+            let endWord="Shruti";
+            console.log("Ends with ' " +endWord+ "':", str4.endsWith(endWord));
+
+            // check string start with a specific word using startwith()
+            let str5="Hello World";
+            let startword="Hello";
+            console.log("Starts With '" + startword + "':", str5.startsWith(startword));
+
+            // remove leading and trailing spacesusing strip()
+            let str6=prompt("Enter a string with space before/after:");
+            console.log("trimmed string:", str6.trim());
+
+            // Take a string and replace all spaces with hyphens (-) using replace()
+            let str7="shruti bhaskar tekale";
+            console.log("Hyphenated string:", str7.replaceAll(" ", "-"));
+
+            // print each charactervof name on a new line
+            let str8=prompt("Enter your name:");
+            console.log("Characters in your name:");
+            for (let char of str8){
+                console.log(char);
+            }
+            
+        
+           //split string into a list of words using split()
+            let str9="split this sentence into words";
+            let words=str9.split(" ");
+            console.log("List of words:", words);
+
+        </script>
+    </body>
+</html>
